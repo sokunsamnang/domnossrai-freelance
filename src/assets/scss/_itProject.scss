@@ -1,0 +1,23 @@
+.my-slider-btn{
+  border: none;
+  background: none;
+  .btn{
+    padding: 20px 20px !important;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.view-more-btn{
+  padding: 3rem 0rem;
+  .card-bottom{
+    display: flex;
+    justify-content: center;
+    .borders-btn{
+      // padding: 10px 104px;
+    }
+    :hover{
+      background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+    }
+  }
+ 
+}

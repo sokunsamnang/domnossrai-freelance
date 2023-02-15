@@ -1,0 +1,61 @@
+.banner_content {
+  padding: 23.9rem 0;
+  width: fit-content;
+  margin: auto;
+}
+.banner_content .main-title {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #67BBF2;
+  color: #67BBF2;
+  font-size: 76px !important;
+  line-height: 100px !important;
+  font-weight: bold;
+}
+.banner_content .main-title span:last-child {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #E94E4E;
+  color: #E94E4E;
+}
+.banner_content .sub-title {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ACF824;
+  color: #ACF824;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+}
+
+.banner_inner {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.over-lay::before {
+  content: "";
+  background-color: #E9979769;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.sm-section_gap_top {
+  padding-top: 120px !important;
+}
+
+.single-gallery-youtube {
+  height: auto !important;
+}
+
+.section_gap_bottom {
+  padding-bottom: 120px;
+}
+
+.pb-40 {
+  padding-bottom: 40px !important;
+}

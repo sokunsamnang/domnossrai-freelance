@@ -1,0 +1,111 @@
+.black-over-lay::before {
+    content: "";
+    background-color: #1A151585;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.nft-content {
+    text-align: center;
+
+    .desc-title {
+        background: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #F44D4D;
+        color: #F44D4D;
+        font-weight: 500;
+    }
+}
+
+.nft-main-title {
+    -webkit-text-fill-color: #fff !important;
+    color: #fff !important;
+}
+
+.nft-sub-title {
+    letter-spacing: 4px;
+}
+
+.nft-container {
+    width: 1240px;
+    margin: auto;
+    @media screen and (max-width: 1240px) {
+        width: 90%;
+    }
+}
+
+.text-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 12rem 0;
+    @media screen and (max-width: 1240px) {
+        flex-direction: column-reverse !important;
+    }
+    .text {
+        width: 40%;
+        @media screen and (max-width:1240px) {
+            width: 100%;
+        }
+        .use-desc {
+            padding: 40px 0px;
+            display: block;
+
+            h1 {
+                font-size: 45px;
+                font-weight: 600;
+            }
+
+            p {
+                padding: 15px 0px 0px 0px;
+            }
+        }
+
+        .use-case {
+            padding: 40px 0px;
+            display: block;
+           
+
+            h2 {
+                color: #27B7E3;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 10px 0px;
+
+                    p {
+                        margin-left: 5px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .img {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 1240px) {
+            width: 100%;
+        }
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse !important;
+    @media screen and (max-width: 1240px) {
+        flex-direction: column-reverse !important;
+    }
+}

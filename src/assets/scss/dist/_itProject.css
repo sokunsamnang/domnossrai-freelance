@@ -1,0 +1,20 @@
+.my-slider-btn {
+  border: none;
+  background: none;
+}
+.my-slider-btn .btn {
+  padding: 20px 20px !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.view-more-btn {
+  padding: 3rem 0rem;
+}
+.view-more-btn .card-bottom {
+  display: flex;
+  justify-content: center;
+}
+.view-more-btn .card-bottom :hover {
+  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+}
