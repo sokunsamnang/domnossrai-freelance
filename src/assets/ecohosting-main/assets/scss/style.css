@@ -660,7 +660,6 @@ hr {
   width: 100%;
   box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   z-index: 9999;
-  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   background: #fff;
@@ -1963,12 +1962,9 @@ hr {
 /*-- Some Animated CSS -- */
 /* bounce-animate */
 .bounce-animate {
-  -webkit-animation-name: float-bob;
-          animation-name: float-bob;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-bob;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   /* animation-timing-function: linear; */
   -moz-animation-name: float-bob;
   -moz-animation-duration: 2s;
@@ -1983,38 +1979,15 @@ hr {
   -o-animation-iteration-count: infinite;
   -o-animation-timing-function: linear;
 }
-
-@-webkit-keyframes float-bob {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
 /* heartbeat */
 .heartbeat {
-  -webkit-animation: heartbeat 1s infinite alternate;
-          animation: heartbeat 1s infinite alternate;
-}
-
-@-webkit-keyframes heartbeat {
-  to {
-    transform: scale(1.03);
-  }
+  animation: heartbeat 1s infinite alternate;
 }
 /* rotateme */
 .rotateme {
-  -webkit-animation-name: rotateme;
   animation-name: rotateme;
-  -webkit-animation-duration: 30s;
   animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
@@ -2024,14 +1997,6 @@ hr {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes rotateme {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
   }
 }
 /* 20. preloader */
@@ -2063,7 +2028,6 @@ hr {
   border-radius: 50%;
   box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
   background-color: #fff;
-  -webkit-animation: zoom 2000ms infinite ease;
   animation: zoom 2000ms infinite ease;
   transition: 0.6s;
 }
@@ -2094,17 +2058,6 @@ hr {
   font-weight: 800;
   color: #dca73a;
   text-transform: uppercase;
-}
-
-@-webkit-keyframes zoom {
-  0% {
-    transform: rotate(0deg);
-    transition: 0.6s;
-  }
-  100% {
-    transform: rotate(360deg);
-    transition: 0.6s;
-  }
 }
 @keyframes zoom {
   0% {
@@ -3196,17 +3149,11 @@ form.search-box .input-form input {
 form.search-box .input-form input::-moz-placeholder {
   color: #616875;
 }
-form.search-box .input-form input:-ms-input-placeholder {
-  color: #616875;
-}
 form.search-box .input-form input::placeholder {
   color: #616875;
 }
 @media (max-width: 575px) {
   form.search-box .input-form input::-moz-placeholder {
-    font-size: 13px;
-  }
-  form.search-box .input-form input:-ms-input-placeholder {
     font-size: 13px;
   }
   form.search-box .input-form input::placeholder {
@@ -3621,9 +3568,6 @@ form.search-box .input-form .world-form i {
 .login-form .form-input input::-moz-placeholder {
   color: #F067FF;
 }
-.login-form .form-input input:-ms-input-placeholder {
-  color: #F067FF;
-}
 .login-form .form-input input::placeholder {
   color: #F067FF;
 }
@@ -3903,9 +3847,6 @@ form.search-box .input-form .world-form i {
   text-align: center;
 }
 .footer-area .footer-form form input::-moz-placeholder {
-  color: #CCC6DC;
-}
-.footer-area .footer-form form input:-ms-input-placeholder {
   color: #CCC6DC;
 }
 .footer-area .footer-form form input::placeholder {
@@ -4572,9 +4513,6 @@ form.search-box .input-form .world-form i {
 .blog_right_sidebar .search_widget .form-control::-moz-placeholder {
   color: #999999;
 }
-.blog_right_sidebar .search_widget .form-control:-ms-input-placeholder {
-  color: #999999;
-}
 .blog_right_sidebar .search_widget .form-control::placeholder {
   color: #999999;
 }
@@ -4607,9 +4545,6 @@ form.search-box .input-form .world-form i {
   border-radius: 0;
 }
 .blog_right_sidebar .newsletter_widget .form-control::-moz-placeholder {
-  color: #999999;
-}
-.blog_right_sidebar .newsletter_widget .form-control:-ms-input-placeholder {
   color: #999999;
 }
 .blog_right_sidebar .newsletter_widget .form-control::placeholder {
@@ -5054,18 +4989,11 @@ form.search-box .input-form .world-form i {
   font-weight: 300;
   color: #999999;
 }
-.comment-form .form-control:-ms-input-placeholder {
-  font-weight: 300;
-  color: #999999;
-}
 .comment-form .form-control::placeholder {
   font-weight: 300;
   color: #999999;
 }
 .comment-form .form-control::-moz-placeholder {
-  color: #777777;
-}
-.comment-form .form-control:-ms-input-placeholder {
   color: #777777;
 }
 .comment-form .form-control::placeholder {
@@ -5153,10 +5081,6 @@ form.search-box .input-form .world-form i {
   box-shadow: none;
 }
 .form-contact .form-control::-moz-placeholder {
-  font-weight: 300;
-  color: #999999;
-}
-.form-contact .form-control:-ms-input-placeholder {
   font-weight: 300;
   color: #999999;
 }
@@ -5329,7 +5253,6 @@ form.search-box .input-form .world-form i {
   transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   width: auto;
@@ -6435,8 +6358,4 @@ del {
 
 .switch-wrap {
   margin-bottom: 10px;
-}
-
-.logo img {
-  width: 177px;
 }/*# sourceMappingURL=style.css.map */
