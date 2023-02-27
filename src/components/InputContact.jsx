@@ -19,6 +19,7 @@ const schema = yup.object({
   message: yup.string().required(messageRequired),
   captchaToken: yup.string().required(messageRequired)
 })
+// email using emailjs
 const SERVICE_ID = "service_fu0nisz";
 // const TEMPLATE_ID = "template_00vu2c2"; //template email me
 const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
