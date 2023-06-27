@@ -4,6 +4,8 @@ import GraphicProject from './GraphicProject';
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
 import { branding } from '../assets/data/portfolio';
+import heroAnimation from '../assets/image/animation/140746-cubicmaths.json';
+import togetherAnimation from '../assets/image/animation/129756-online-investment-scheme.json';
 import { Titled } from 'react-titled';
 const Landing = () => {
   const { t } = useTranslation();
@@ -30,7 +32,9 @@ const Landing = () => {
                     <Player
                       autoplay
                       loop
-                      src="https://lottie.host/101c75f2-4686-4237-9911-43062ad13824/ybejxWjwbR.json"
+                      src={heroAnimation}
+                      // src="https://assets4.lottiefiles.com/packages/lf20_pJvtiSVyYH.json"
+                      // src="https://lottie.host/101c75f2-4686-4237-9911-43062ad13824/ybejxWjwbR.json"
                       style={{ height: "100%", width: "100%" }}
                     >
                     </Player>
@@ -189,7 +193,7 @@ const Landing = () => {
                 <Player
                   autoplay
                   loop
-                  src="https://assets9.lottiefiles.com/packages/lf20_uZeVpjFav8.json"
+                  src={togetherAnimation}
                   style={{ height: "100%", width: "100%" }}
                 >
                 </Player>
