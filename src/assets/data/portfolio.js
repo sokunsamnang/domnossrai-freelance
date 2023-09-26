@@ -53,7 +53,7 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["partner1.png", "partner2.png", "partner3.png", "partner4.png"]
+    img: ["partner1.png", "partner2.png", "partner3.png", "partner4.png"],
   },
   {
     title_id: "id_10",

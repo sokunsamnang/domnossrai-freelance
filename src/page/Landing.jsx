@@ -22,9 +22,6 @@ const Landing = () => {
                     <span data-animation="fadeInLeft" data-delay=".3s">{t("landing.design_evolution")}</span>
                     <h1 data-animation="fadeInLeft" data-delay=".6s ">{t('landing.design_driven')}</h1>
                     <p data-animation="fadeInLeft" data-delay=".8s">{t('landing.supercharge')}</p>
-                    {/* <div className="slider-btns">
-                      <a data-animation="fadeInLeft" data-delay="1s" href="/#" className="btn radius-btn">{t('landing.get_start')}</a>
-                    </div> */}
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
@@ -33,8 +30,6 @@ const Landing = () => {
                       autoplay
                       loop
                       src={heroAnimation}
-                      // src="https://assets4.lottiefiles.com/packages/lf20_pJvtiSVyYH.json"
-                      // src="https://lottie.host/101c75f2-4686-4237-9911-43062ad13824/ybejxWjwbR.json"
                       style={{ height: "100%", width: "100%" }}
                     >
                     </Player>
@@ -68,7 +63,7 @@ const Landing = () => {
                   <h4>{t('landing.system_development')}</h4>
                   <p>{t('landing.system_development_desc')}</p>
                 </div>
-                {/* <div className="card-bottom"> <Link to="/it" className="borders-btn ">{t('landing.get_start')}</Link></div> */}
+                
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
@@ -79,7 +74,7 @@ const Landing = () => {
                   <p>{t('landing.web_mobile_development_desc')}</p>
 
                 </div>
-                {/* <div className="card-bottom"> <Link to="/it" className="borders-btn ">{t('landing.get_start')}</Link></div> */}
+               
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
@@ -89,16 +84,13 @@ const Landing = () => {
                   <h4>{t('landing.blockchain_nft_solution')}</h4>
                   <p>{t('landing.blockchain_nft_solution_desc')}</p>
                 </div>
-                {/* <div className="card-bottom"> <Link to="/blockchain_&_nft" className="borders-btn ">{t('landing.get_start')}</Link></div> */}
+                
               </div>
             </div>
 
           </div>
         </div>
       </section>
-
-      {/* card price end */}
-
       {/* about-1 area start */}
       <div className="about-area1 section-padding40">
         <div className="container">
@@ -122,9 +114,6 @@ const Landing = () => {
                   <h2>{t('landing.doubleda_means')} "{t('landing.together')}" {t('landing.doubleda_means2')} </h2>
                 </div>
                 <p className="mb-40">{t('landing.doubleda_means_desc')}</p>
-                {/* <div className="slider-btns">
-                  <Link to="/gd" data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">{t('landing.doubleda_together')}</Link>
-                </div> */}
               </div>
             </div>
           </div>

@@ -99,7 +99,7 @@ const Server = () => {
                     </ul>
                   </div>
                   <div className="next-step">
-                    <Link to="/contact" className="slider-btns my-slider-btn"><a data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn" href="/detail/1">Contact Us</a></Link>
+                    <Link to="/contact" className="slider-btns my-slider-btn"><span data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">Contact Us</span></Link>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Server = () => {
                     </ul>
                 </div>
                 <div className="next-step">
-                  <Link to="/contact" className="slider-btns my-slider-btn"><a data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn" href="/detail/1">Contact Us</a></Link>
+                  <Link to="/contact" className="slider-btns my-slider-btn"><span data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">Contact Us</span></Link>
                 </div>
                 </div>
                 
@@ -146,7 +146,7 @@ const Server = () => {
                     </ul>
                 </div>
                 <div className="next-step">
-                  <Link to="/contact" className="slider-btns my-slider-btn"><a data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn" href="/detail/1">Contact Us</a></Link>
+                  <Link to="/contact" className="slider-btns my-slider-btn"><span data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">Contact Us</span></Link>
                 </div>
               </div>
               </div>

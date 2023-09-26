@@ -1,5 +1,5 @@
 import Landing from './page/Landing';
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, BrowserRouter, Routes, HashRoute } from "react-router-dom";
 import MainLayout from './components/MainLayout';
 import ITProjectDetail from './page/ITProjectDetail';
 import GraphicProjectDetail from './page/GraphicProjectDetail';
@@ -16,9 +16,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainLayout><Landing /></MainLayout>} />
+        <Route exact path="/" element={<MainLayout><Landing /></MainLayout>} />
         <Route path="/development" element={<MainLayout><ITProjectDetail /></MainLayout>} />
-        <Route path="/detail/:id" element={<MainLayout><PortfolioDetail /></MainLayout>} />
+        <Route path="/development/:id" element={<MainLayout><PortfolioDetail /></MainLayout>} />
         <Route path="/graphic-design" element={<MainLayout><GraphicProjectDetail /></MainLayout>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

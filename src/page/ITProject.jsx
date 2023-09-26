@@ -25,33 +25,18 @@ const ITProject = () => {
                       <p><i className="fa fa-angle-right"></i> {t(`${item.title_id}.detail_title`)}</p>
                       <p><i className="fa fa-angle-right"></i>  {t(`${item.title_id}.release_date`)}</p>
                     </div>
-                    {/* <div className="packages-review">
-                      <p>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <span>254 reviews</span>
-                      </p>
-                    </div> */}
                     <div className="about-btn p-0">
-
                       <button className="slider-btns my-slider-btn col-12" >
-                        <Link to={{ pathname: `/detail/${index + 1}` }} data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
+                        <Link to={{ pathname: `/development/${t(`${item.title_id}.title`)}` }} data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
                           Case Study
                         </Link>
                       </button>
-
-
                     </div>
                   </div>
                 </div>
               </div>
             ))
           }
-
-
         </div>
         <div className="row">
           <div className="col-12 view-more-btn">
