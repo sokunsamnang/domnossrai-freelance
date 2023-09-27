@@ -90,7 +90,7 @@ const MainLayout = ({ children }) => {
                                 <li><Link to="/it">{t('menus.portfolio')}</Link></li>
                               </ul>
                             </li>
-                            <li><Link to="/gd">{t('menus.graphic_design')}</Link></li>
+                            <li><Link to="/graphic-design">{t('menus.graphic_design')}</Link></li>
                             <li><Link to="/blockchain_&_nft">{t('menus.blockchain')}</Link></li>
                             <li><Link to="/contact">{t('menus.contact')}</Link></li>
                             <li>

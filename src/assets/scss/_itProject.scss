@@ -21,3 +21,69 @@
   }
  
 }
+.download{
+  margin: 120px auto;
+  &__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 35px 0px;
+    .photo{
+     width: 85px;
+    }
+    p{
+      margin: 0px;
+      font-size: 30px;
+      font-weight: 800;
+      color: #000;
+    }
+  }
+  
+  &__button,.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px 0px;
+    cursor: pointer;
+    &__android{
+      background-color: #459c67;
+      .button__icon{
+        color: white;
+      }
+    }
+    &__ios{
+      background-color: #3d63ea;
+      .button__icon{
+        color: white;
+      }
+    }
+    &__icon{
+      font-size: 50px;
+    }
+    &__box{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+      p{
+        margin: 0;
+      }
+    }
+    &__big_text{
+      font-weight: 700;
+      color: white;
+    }
+    &__small_text{
+      font-size: 14px;
+      color: white;
+    }
+    &__down_icon{
+      color: white;
+    }
+
+  }
+  
+}

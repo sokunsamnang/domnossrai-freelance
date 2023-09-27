@@ -3,19 +3,47 @@ import { useTranslation } from 'react-i18next';
 import { FiCheck, FiCheckCircle } from 'react-icons/fi';
 import { useParams } from 'react-router-dom';
 import { allPortfolio } from '../assets/data/portfolio';
+import appPhoto from '../assets/image/ecommerce_market_app.jpg';
 import { Titled } from 'react-titled';
 import NoPage from './NoPage';
+import {FcAndroidOs} from 'react-icons/fc';
+import {BsDownload} from 'react-icons/bs';
+import {DiAndroid} from 'react-icons/di';
+import {FaAppStoreIos} from 'react-icons/fa';
 const PortfolioDetail = () => {
   const { t } = useTranslation();
   const { id } = useParams();
   const [data,setData] = useState();
+  const [device, setDevice] = useState('');
+  console.log(device);
+  const handleDownloadAndroid = () => {
+    device == 'android' ? alert('your device Android') : alert('download only for android');
+  }
+  const handleDownloadIos = () =>{
+    device == 'ios' ? alert('your device IOS') : alert('download only for ios');
+  }
   useEffect(() => {
+    const userAgent = navigator.userAgent
+    const isAndroid =/Android/i.test(userAgent);
+    const isWindow = /Windows/i.test(userAgent);
+    const isIos = /iPhone|iPad|iPod/i.test(userAgent);
+    const detected = () => {
+      if(isAndroid){
+        return 'android'
+      }else if(isWindow){
+        return 'window'
+      } else if(isIos){
+        return 'ios'
+      }
+    }
+    setDevice(detected);
     window.scrollTo({
       top: 0,
       behavior: 'auto',
     });
     allPortfolio.map((item)=>{t(`${item.title_id}.title`) == id && setData(item)})
   }, [])
+ 
   return (
     <>
     {data ?
@@ -75,7 +103,7 @@ const PortfolioDetail = () => {
               </div>
             </div>
           </section>
-          <section className="section_gap_bottom">
+          <section>
             <div className="container image-container">
               {
                 data.img.map((photo, index) => (
@@ -84,6 +112,13 @@ const PortfolioDetail = () => {
                   </div>
                 ))
               }
+            </div>
+          </section>
+          <section className="container download">
+            <div className='download__title'><img src={appPhoto} className="photo" /><p>Install App For Android</p></div>
+            <div className="download__button">
+              <div className="button__box button__android" onClick={handleDownloadAndroid}><DiAndroid className=" button__icon"/><span><p className="button__big_text">Free APK Download</p><p className="button__small_text">for Android</p></span><BsDownload className="button__down_icon"/></div>
+              <div className="button__box button__ios" onClick={handleDownloadIos}><FaAppStoreIos className='button__icon'/><span><p className="button__big_text">Free IOS Download</p><p className="button__small_text">for Iphone</p></span><BsDownload className="button__down_icon"/></div>
             </div>
           </section>
         </> : <NoPage />
