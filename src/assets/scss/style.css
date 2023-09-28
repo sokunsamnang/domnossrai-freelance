@@ -555,20 +555,28 @@ a, a:hover, a:active, a:focus {
 }
 .download__title .photo {
   width: 85px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 10px;
 }
 .download__title p {
   margin: 0px;
   font-size: 30px;
   font-weight: 800;
   color: #000;
+  text-transform: capitalize;
 }
 .download__button, .download .button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 35px;
   margin: 10px 0px;
+}
+.download__button__allow:hover, .download .button__allow:hover {
   cursor: pointer;
+}
+.download__button__block:hover, .download .button__block:hover {
+  cursor: not-allowed;
 }
 .download__button__android, .download .button__android {
   background-color: #459c67;
@@ -591,6 +599,7 @@ a, a:hover, a:active, a:focus {
   align-items: center;
   padding: 10px;
   border-radius: 10px;
+  position: relative;
 }
 .download__button__box p, .download .button__box p {
   margin: 0;
@@ -605,6 +614,13 @@ a, a:hover, a:active, a:focus {
 }
 .download__button__down_icon, .download .button__down_icon {
   color: white;
+}
+.download__button__error_msg, .download .button__error_msg {
+  position: absolute;
+}
+
+.bottom-gap {
+  margin-bottom: 155px;
 }
 
 .my-box {

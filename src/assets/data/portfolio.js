@@ -54,6 +54,7 @@ export const allPortfolio = [
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     img: ["partner1.png", "partner2.png", "partner3.png", "partner4.png"],
+    download: false
   },
   {
     title_id: "id_10",
@@ -69,7 +70,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["market2.jpg", "market1.jpg", "market3.jpg", "market4.jpg", "market5.jpg", "market6.jpg"]
+    img: ["market2.jpg", "market1.jpg", "market3.jpg", "market4.jpg", "market5.jpg", "market6.jpg"],
+    download: true
   },
   {
     title_id: "id_11",
@@ -85,7 +87,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["HR1.png", "HR2.png", "HR3.png", "HR4.png", "HR5.png", "HR6.png"]
+    img: ["HR1.png", "HR2.png", "HR3.png", "HR4.png", "HR5.png", "HR6.png"],
+    download: false
   },
   {
     title_id: "id_1",
@@ -101,7 +104,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["digi_1.png", "digi_2.png", "digi_3.png", "digi_4.png", "digi_5.png"]
+    img: ["digi_1.png", "digi_2.png", "digi_3.png", "digi_4.png", "digi_5.png"],
+    download: false
   },
 
   {
@@ -118,7 +122,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["hansmile_1.png", "hansmile_2.png", "hansmile_3.png", "hansmile_4.png", "hansmile_5.png", "hansmile_6.png"]
+    img: ["hansmile_1.png", "hansmile_2.png", "hansmile_3.png", "hansmile_4.png", "hansmile_5.png", "hansmile_6.png"],
+    download: false
   },
   {
     title_id: "id_3",
@@ -134,7 +139,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: [],
-    img: ["toptravel_1.png", "toptravel_2.png", "toptravel_3.png", "toptravel_4.png"]
+    img: ["toptravel_1.png", "toptravel_2.png", "toptravel_3.png", "toptravel_4.png"],
+    download: false
   },
 
   {
@@ -151,7 +157,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["yuanta_1.jpg", "yuanta_1.png", "yuanta_2.jpg", "yuanta_2.png"]
+    img: ["yuanta_1.jpg", "yuanta_1.png", "yuanta_2.jpg", "yuanta_2.png"],
+    download: false
   },
   {
     title_id: "id_5",
@@ -167,7 +174,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
-    img: ["alernative_2.jpg", "alernative_1.jpg"]
+    img: ["alernative_2.jpg", "alernative_1.jpg"],
+    download: false
   },
   {
     title_id: "id_6",
@@ -183,7 +191,8 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5", "sub_6"],
     desc_2: [],
-    img: ["artbox_1.jpg", "artbox_2.jpg", "artbox_2.png", "artbox_3.jpg", "artbox_4.jpg", "artbox_5.jpg", "artbox_6.jpg", "artbox_1.png"]
+    img: ["artbox_1.jpg", "artbox_2.jpg", "artbox_2.png", "artbox_3.jpg", "artbox_4.jpg", "artbox_5.jpg", "artbox_6.jpg", "artbox_1.png"],
+    download: false
   },
   {
     title_id: "id_7",
@@ -203,6 +212,7 @@ export const allPortfolio = [
     ],
     desc_2: [],
     img: ["dashi_1.jpg", "dashi_1.png", "dashi_2.jpg", "dashi_2.png", "dashi_3.jpg", "dashi_3.png"],
+    download: false
   },
   {
     title_id: "id_8",
@@ -219,6 +229,7 @@ export const allPortfolio = [
     title_2: "title_2",
     desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
     desc_2: [],
+    download: false
   },
   {
     title_id: "id_9",
@@ -247,7 +258,8 @@ export const allPortfolio = [
       "sub_4",
       "sub_5",
     ],
-    img: ["skyangkor_1.png", "skyangkor_2.png", "skyangkor_3.png", "skyangkor_4.png"]
+    img: ["skyangkor_1.png", "skyangkor_2.png", "skyangkor_3.png", "skyangkor_4.png"],
+    download: false
   },
 ]
 export const allGraphicDesign = [

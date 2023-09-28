@@ -6,10 +6,10 @@ import { allPortfolio } from '../assets/data/portfolio';
 import appPhoto from '../assets/image/ecommerce_market_app.jpg';
 import { Titled } from 'react-titled';
 import NoPage from './NoPage';
-import {FcAndroidOs} from 'react-icons/fc';
 import {BsDownload} from 'react-icons/bs';
 import {DiAndroid} from 'react-icons/di';
 import {FaAppStoreIos} from 'react-icons/fa';
+
 const PortfolioDetail = () => {
   const { t } = useTranslation();
   const { id } = useParams();
@@ -17,10 +17,10 @@ const PortfolioDetail = () => {
   const [device, setDevice] = useState('');
   console.log(device);
   const handleDownloadAndroid = () => {
-    device == 'android' ? alert('your device Android') : alert('download only for android');
+    device === 'android' && window.open('https://play.google.com/store/games?device=phone');
   }
   const handleDownloadIos = () =>{
-    device == 'ios' ? alert('your device IOS') : alert('download only for ios');
+    device === 'ios' && window.open('https://www.apple.com/app-store/');
   }
   useEffect(() => {
     const userAgent = navigator.userAgent
@@ -41,8 +41,8 @@ const PortfolioDetail = () => {
       top: 0,
       behavior: 'auto',
     });
-    allPortfolio.map((item)=>{t(`${item.title_id}.title`) == id && setData(item)})
-  }, [])
+    allPortfolio.map((item) =>(t(`${item.title_id}.title`) === id && setData(item)))
+  },[])
  
   return (
     <>
@@ -114,16 +114,18 @@ const PortfolioDetail = () => {
               }
             </div>
           </section>
-          <section className="container download">
-            <div className='download__title'><img src={appPhoto} className="photo" /><p>Install App For Android</p></div>
+          {data.download ? 
+           <section className="container download">
+            <div className='download__title'><img src={appPhoto} className="photo" /><p>Install App</p></div>
             <div className="download__button">
-              <div className="button__box button__android" onClick={handleDownloadAndroid}><DiAndroid className=" button__icon"/><span><p className="button__big_text">Free APK Download</p><p className="button__small_text">for Android</p></span><BsDownload className="button__down_icon"/></div>
-              <div className="button__box button__ios" onClick={handleDownloadIos}><FaAppStoreIos className='button__icon'/><span><p className="button__big_text">Free IOS Download</p><p className="button__small_text">for Iphone</p></span><BsDownload className="button__down_icon"/></div>
+              <div className={`button__box button__android button__${device === 'android' ? 'allow' : 'block' }`} onClick={handleDownloadAndroid}><DiAndroid className=" button__icon"/><span><p className="button__big_text">Free APK Download</p><p className="button__small_text">for Android</p></span><BsDownload className="button__down_icon"/></div>
+              <div className={`button__box button__ios button__${device === 'ios' ? 'allow' : 'block' }`} onClick={handleDownloadIos}><FaAppStoreIos className='button__icon'/><span><p className="button__big_text">Free IOS Download</p><p className="button__small_text">for Iphone</p></span><BsDownload className="button__down_icon"/></div>
             </div>
           </section>
+          : <div className='bottom-gap'></div>
+          }
         </> : <NoPage />
     }
-     
     </>
   )
 }

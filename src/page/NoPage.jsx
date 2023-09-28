@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/css/page_notfound.css'
 import { useTranslation } from 'react-i18next';
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
 import { Titled } from 'react-titled';
 const NoPage = () => {
   const { t } = useTranslation();

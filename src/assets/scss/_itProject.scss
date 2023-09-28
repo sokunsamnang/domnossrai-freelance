@@ -31,12 +31,15 @@
     margin: 35px 0px;
     .photo{
      width: 85px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+     border-radius: 10px;
     }
     p{
       margin: 0px;
       font-size: 30px;
       font-weight: 800;
       color: #000;
+      text-transform:capitalize;
     }
   }
   
@@ -44,9 +47,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 35px;
     margin: 10px 0px;
-    cursor: pointer;
+    &__allow:hover{
+      cursor: pointer;
+    }
+    &__block:hover{
+      cursor: not-allowed;
+    }
     &__android{
       background-color: #459c67;
       .button__icon{
@@ -68,6 +76,7 @@
       align-items: center;
       padding: 10px;
       border-radius: 10px;
+      position: relative;
       p{
         margin: 0;
       }
@@ -83,7 +92,12 @@
     &__down_icon{
       color: white;
     }
-
+    &__error_msg{
+      position: absolute;
+    }
   }
   
+}
+.bottom-gap{
+  margin-bottom: 155px;
 }
