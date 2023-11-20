@@ -21,8 +21,8 @@ const schema = yup.object({
 })
 // email using emailjs
 const SERVICE_ID = "service_fu0nisz";
-// const TEMPLATE_ID = "template_00vu2c2"; //template email me
-const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
+const TEMPLATE_ID = "template_00vu2c2"; //template email me
+//const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
 const PUBLIC_KEY = "bALZTd6LgQDONa0nP";
 
 const InputContact = () => {

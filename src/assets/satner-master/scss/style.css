@@ -3523,8 +3523,8 @@ h6 {
     padding: 0px 0px;
   }
   .header_area + section,
-  .header_area + row,
-  .header_area + div {
+.header_area + row,
+.header_area + div {
     margin-top: 117px;
   }
   .header_top .nav {
@@ -3552,8 +3552,8 @@ h6 {
     margin-right: 0px;
   }
   .header_area + section,
-  .header_area + row,
-  .header_area + div {
+.header_area + row,
+.header_area + div {
     margin-top: 0px;
   }
   .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
@@ -3712,8 +3712,8 @@ h6 {
 }
 @media (max-width: 575px) {
   .header_area + section,
-  .header_area + row,
-  .header_area + div {
+.header_area + row,
+.header_area + div {
     margin-top: 0px;
   }
   /* Home Banner Area css

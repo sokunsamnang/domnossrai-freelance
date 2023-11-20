@@ -505,9 +505,9 @@ hr {
 .borders-btn {
   padding: 10px 64px;
   background: none;
-  border: 1px solid #F067FF;
+  border: 1px solid #2B1C5C;
   display: inline-block;
-  color: #F067FF;
+  color: #2B1C5C;
   border-radius: 30px;
   text-transform: uppercase
 }
@@ -621,7 +621,7 @@ hr {
 
 #scrollUp,
 #back-top {
-  background: #F067FF;
+  background: #2B1C5C;
   height: 50px;
   width: 50px;
   right: 31px;
@@ -2533,7 +2533,7 @@ hr {
 }
 
 .section-tittle2 h2 {
-  color: #4C1E51
+  color: #2B1C5C
 }
 
 .section-bg {
@@ -2760,11 +2760,11 @@ hr {
   -moz-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
-  background: #F067FF
+  background: #2B1C5C
 }
 
 .main-header .main-menu ul li:hover>a {
-  color: #F067FF
+  color: #2B1C5C
 }
 
 .main-header .main-menu ul li:hover>a::after {
@@ -2893,7 +2893,7 @@ hr {
 }
 
 .header-sticky.sticky-bar {
-  background: #4C1E51
+  background: #2B1C5C
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
@@ -3242,7 +3242,7 @@ hr {
 }
 
 .slider-bg {
-  background: #2D0A31
+  background: #2B1C5C
 }
 
 .dot-style .slick-dots {
@@ -3704,14 +3704,14 @@ form.search-box .input-form .world-form i {
   content: "";
   width: 100%;
   height: 53%;
-  background: #2D0A31
+  background: #2B1C5C
 }
 
 .pricing-card-area::after {
   position: absolute;
   top: 53%;
   content: "";
-  border-top: 120px solid #2D0A31;
+  border-top: 120px solid #2B1C5C;
   border-left: 2000px solid transparent;
   left: 0px;
   z-index: -11;
@@ -5995,24 +5995,28 @@ form.search-box .input-form .world-form i {
 
 .btn,
 .border-btn::before,
-.main-header .main-menu ul ul.submenu,
 form.search-box .input-form .search-form button,
 .pricing-card-area .single-card .card-bottom .borders-btn:hover,
 .pricing-card-area .single-card:hover .card-bottom .borders-btn,
 .footer-area .footer-form form .form-icon button {
-  background: #a077ff;
-  background: -moz-linear-gradient(top, #a077ff 0%, #ef67ff 100%);
-  background: -webkit-linear-gradient(top, #a077ff 0%, #ef67ff 100%);
-  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a077ff', endColorstr='#ef67ff', GradientType=0)
+  background: white;
+  color: #2B1C5C;
+  /* background: -moz-linear-gradient(top, #00A5E9 0%, #42C3F7  100%);
+  background: -webkit-linear-gradient(top, #00A5E9 0%, #42C3F7  100%);
+  background: linear-gradient(to bottom, #00A5E9 0%, #42C3F7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A5E9', endColorstr='#42C3F7 ', GradientType=0) */
+}
+.main-header .main-menu ul ul.submenu{
+  background: #2B1C5C;
+  color: white;
 }
 
 .btn::before {
-  background: #a077ff;
-  background: -moz-linear-gradient(top, #9a73f5 0%, #e562f3 100%);
-  background: -webkit-linear-gradient(top, #9770f3 0%, #e361f1 100%);
-  background: linear-gradient(to bottom, #926ceb 0%, #e05eee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a077ff', endColorstr='#ef67ff', GradientType=0)
+  background: #00A5E9;
+  background: -moz-linear-gradient(top, #00affa  0%, #59c7f3 100%);
+  background: -webkit-linear-gradient(top, #00affa  0%, #59c7f3 100%);
+  background: linear-gradient(to bottom, #00affa  0%, #59c7f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A5E9', endColorstr='#42C3F7 ', GradientType=0)
 }
 
 .sample-text-area {

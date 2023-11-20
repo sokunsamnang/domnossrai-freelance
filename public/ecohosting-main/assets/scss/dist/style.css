@@ -634,7 +634,7 @@ hr {
 
 /* scrollUp */
 #scrollUp, #back-top {
-  background: #F067FF;
+  background: #2B1C5C;
   height: 50px;
   width: 50px;
   right: 31px;
@@ -3521,13 +3521,13 @@ form.search-box .input-form .world-form i {
   content: "";
   width: 100%;
   height: 53%;
-  background: #2D0A31;
+  background:#2B1C5C;
 }
 .pricing-card-area::after {
   position: absolute;
   top: 53%;
   content: "";
-  border-top: 120px solid #2D0A31;
+  border-top: 120px solid #2B1C5C;
   border-left: 2000px solid transparent;
   left: 0px;
   z-index: -11;

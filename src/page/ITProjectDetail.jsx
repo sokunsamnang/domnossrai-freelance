@@ -42,7 +42,8 @@ export default function ITProjectDetail(props) {
             <div className="row">
               {
                 allPortfolio.map((item, index) => (
-                  <div key={item.id} className="col-md-4 col-sm-6">
+                  <Link to={{ pathname: `/development/${t(`${item.title_id}.title`)}` }} key={item.id} className="col-md-4 col-sm-6">
+                 
                     <div className="single-package-item">
                       <img src={require(`../assets/image/portfolio/${item.img[0]}`)} alt="portfolio-image" />
                       <div className="single-package-item-txt">
@@ -51,16 +52,18 @@ export default function ITProjectDetail(props) {
                           <p><i className="fa fa-angle-right"></i> {t(`${item.title_id}.detail_title`)}</p>
                           <p><i className="fa fa-angle-right"></i>  {t(`${item.title_id}.release_date`)}</p>
                         </div>
-                        <div className="about-btn p-0">
+                        {/* <div className="about-btn p-0">
                           <button className="slider-btn col-12 my-slider-btn" >
                             <Link to={{ pathname: `/development/${t(`${item.title_id}.title`)}` }} data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
                               See Details
                             </Link>
                           </button>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
-                  </div>
+             
+                  </Link>
+                  
                 ))
               }
             </div>

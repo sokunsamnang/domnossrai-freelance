@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from "react-icons/ai";
 import useCollapse from "react-collapsed";
 import { Titled } from 'react-titled';
+import logo from '../assets/image/Logos/Asset 6@4x.png';
+import dTextLogo from '../assets/image/Logos/DTextLogo.png'
 const MainLayout = ({ children }) => {
 
   const { t, i18n } = useTranslation();
@@ -22,13 +24,13 @@ const MainLayout = ({ children }) => {
   return (
 
     <div>
-      <Titled title={() => 'DoubleDa'} currentTitle={() => `${window.location.pathname} | DoubleDa`}>
+      <Titled title={() => 'Domnossrai'} currentTitle={() => `${window.location.pathname} | Domnossrai`}>
         <div id="preloader-active">
           <div className="preloader d-flex align-items-center justify-content-center">
             <div className="preloader-inner position-relative">
-              <div className="preloader-circle"></div>
+              <div className="preloader-circle" style={{ borderTopColor: "#2B1C5C" }}></div>
               <div className="preloader-img pere-text">
-                <img src="/ecohosting-main/assets/img/logo/loder.png" alt="" />
+                <img src={logo} alt="" />
               </div>
             </div>
           </div>
@@ -41,7 +43,7 @@ const MainLayout = ({ children }) => {
                   <div className="row align-items-center">
                     <div className="col-xl-2 col-lg-2">
                       <div className="logo">
-                        <Link to="/"><img src="/ecohosting-main/assets/img/logo/logo.png" alt="" className="header-logo" onClick={() => goToTop()} /></Link>
+                        <Link to="/"><img src={logo} alt="" className="header-logo" onClick={() => goToTop()} /></Link>
                       </div>
                     </div>
                     <div className="col-xl-10 col-lg-10">
@@ -55,9 +57,7 @@ const MainLayout = ({ children }) => {
                                   <li><Link to="/development" >{t('menus.portfolio')}</Link></li>
                                 </ul>
                               </li>
-                              <li><Link to="/server-hosting" >{t('menus.server')}</Link></li>
-                              <li><Link to="/graphic-design" >{t('menus.graphic_design')}</Link></li>
-                              <li><Link to="/blockchain_&_nft" >{t('menus.blockchain')}</Link></li>
+                             
                               <li><Link to="/contact" >{t('menus.contact')}</Link></li>
                               <li><a >{t("menus.lang.lng")}</a>
                                 <ul className="submenu">
@@ -123,7 +123,7 @@ const MainLayout = ({ children }) => {
         </main>
 
         <footer>
-          <div className="footer-wrappr" style={{ backgroundImage: "url(" + "/ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>
+          <div className="footer-wrappr" style={{ backgroundColor: '#2B1C5C'}}>
             <div className="footer-area footer-padding ">
               <div className="container">
                 <div className="row d-flex justify-content-between">
@@ -131,7 +131,7 @@ const MainLayout = ({ children }) => {
                     <div className="single-footer-caption mb-50">
 
                       <div className="footer-logo mb-25 p-0">
-                        <a href="/#"><img src="ecohosting-main/assets/img/logo/logo2_footer.png" alt="" /></a>
+                        <a href="/#"><img src={dTextLogo} alt="" /></a>
                       </div>
                       <div className="footer-tittle mb-50">
                         <p>{t('footer.enough_talk')}</p>
@@ -155,11 +155,11 @@ const MainLayout = ({ children }) => {
                           </form>
                         </div>
                       </div>
-                      <div className="footer-social mt-50">
+                      {/* <div className="footer-social mt-50">
                         <a href="#"><i className="fab fa-twitter"></i></a>
                         <a href="#"><i className="fab fa-facebook-f"></i></a>
                         <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
@@ -168,9 +168,9 @@ const MainLayout = ({ children }) => {
                       <div className="footer-tittle">
                         <h4>{t('footer.contact_us')}</h4>
                         <ul>
-                          <li><a href="mailto:admin@doubleda.net">admin@doubleda.net</a></li>
-                          <li>+44) (0)7487 540 640</li>
-                          <li>+82) (0)1027 099 254</li>
+                          <li><a href="mailto:admin@doubleda.net">sokkongchan@gmail.com</a></li>
+                          <li>+855 086581383</li>
+                          <li>+855 086836109</li>
 
                         </ul>
                       </div>

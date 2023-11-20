@@ -6,12 +6,14 @@ import { useTranslation } from 'react-i18next';
 import { branding } from '../assets/data/portfolio';
 import heroAnimation from '../assets/image/animation/140746-cubicmaths.json';
 import togetherAnimation from '../assets/image/animation/129756-online-investment-scheme.json';
+import devIcon from '../assets/image/icons/Mobile app development and coding.png';
+import dbIcon from '../assets/image/icons/Uploading files to a database.png'
 import { Titled } from 'react-titled';
 const Landing = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Titled title={title => `Double.da | ${title}`} />
+      <Titled title={title => `Home | ${title}`} />
       <div className="slider-area slider-bg ">
         <div className="slider-active">
           <div className="single-slider d-flex align-items-center slider-height ">
@@ -55,11 +57,11 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
               <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
                 <div className="card-top pb-5">
-                  <img src="ecohosting-main/assets/img/icon/price2.svg" alt="" />
+                  <img src={dbIcon} alt="" />
                   <h4>{t('landing.system_development')}</h4>
                   <p>{t('landing.system_development_desc')}</p>
                 </div>
@@ -69,22 +71,12 @@ const Landing = () => {
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
               <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
                 <div className="card-top pb-5">
-                  <img src="ecohosting-main/assets/img/icon/services4.svg" alt="" />
+                  <img src={devIcon} alt="" />
                   <h4>{t('landing.web_mobile_development')}</h4>
                   <p>{t('landing.web_mobile_development_desc')}</p>
 
                 </div>
                
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
-              <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
-                <div className="card-top pb-5">
-                  <img src="ecohosting-main/assets/img/icon/price3.svg" alt="" />
-                  <h4>{t('landing.blockchain_nft_solution')}</h4>
-                  <p>{t('landing.blockchain_nft_solution_desc')}</p>
-                </div>
-                
               </div>
             </div>
 
@@ -124,7 +116,7 @@ const Landing = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8">
               <div className="section-tittle text-center mb-90">
-                <h2 style={{ color: '#4C1E51' }}>{t('landing.development_project')}</h2>
+                <h2 style={{ color: '#2B1C5C' }}>{t('landing.development_project')}</h2>
                 <p>{t('landing.development_project_desc')}</p>
               </div>
             </div>
@@ -132,20 +124,8 @@ const Landing = () => {
           <ITProject />
         </div>
       </section>
-      <section className="section-padding40">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8">
-              <div className="section-tittle text-center mb-90">
-                <h2 style={{ color: '#4C1E51' }}>{t('landing.graphic_design_project')}</h2>
-                <p>{t('landing.graphic_design_project_desc')}</p>
-              </div>
-            </div>
-          </div>
-          <GraphicProject />
-        </div>
-      </section>
-      <section className="brand_area section_gap_bottom">
+   
+      {/* <section className="brand_area section_gap_bottom">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8">
@@ -173,7 +153,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

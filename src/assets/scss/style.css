@@ -26,7 +26,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .logo .header-logo {
-  height: 30px;
+  height: 70px;
 }
 
 .my-about-btn {
@@ -263,12 +263,18 @@ a, a:hover, a:active, a:focus {
 
 .single-package-item {
   max-width: unset !important;
+  box-shadow: none !important;
 }
 
 .single-package-item img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
+  border-radius: 15px;
+}
+
+.single-package-item-txt {
+  padding: 0 !important;
 }
 
 .single-brand-items {
@@ -412,6 +418,7 @@ a, a:hover, a:active, a:focus {
   padding: 0 35px;
 }
 .form-input .form-text .tag-title {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 600;
@@ -540,7 +547,7 @@ a, a:hover, a:active, a:focus {
   justify-content: center;
 }
 .view-more-btn .card-bottom :hover {
-  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+  background: #2B1C5C;
 }
 
 .download {
@@ -629,6 +636,7 @@ a, a:hover, a:active, a:focus {
 
 .banner_content {
   padding: 23.9rem 0;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
