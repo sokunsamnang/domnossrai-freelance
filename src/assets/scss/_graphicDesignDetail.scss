@@ -4,8 +4,9 @@
   margin: auto;
 
   .main-title{
-    background: transparent;
-    color: #67BBF2;
+    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #2B1C5C 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 76px ;
     line-height: 100px ;
     font-weight: bold ;
