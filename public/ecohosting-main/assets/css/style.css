@@ -2764,7 +2764,7 @@ hr {
 }
 
 .main-header .main-menu ul li:hover>a {
-  color: #2B1C5C
+  color: #fff
 }
 
 .main-header .main-menu ul li:hover>a::after {
@@ -3730,7 +3730,8 @@ form.search-box .input-form .world-form i {
 }
 
 .pricing-card-area .single-card .card-top img {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  height: 95px;
 }
 
 .pricing-card-area .single-card .card-top p {

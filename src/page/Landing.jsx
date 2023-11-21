@@ -4,10 +4,11 @@ import GraphicProject from './GraphicProject';
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
 import { branding } from '../assets/data/portfolio';
-import heroAnimation from '../assets/image/animation/140746-cubicmaths.json';
+import heroAnimation from '../assets/image/animation/140746-hero.json';
 import togetherAnimation from '../assets/image/animation/129756-online-investment-scheme.json';
 import devIcon from '../assets/image/icons/Mobile app development and coding.png';
 import dbIcon from '../assets/image/icons/Uploading files to a database.png'
+import mobileIll from '../assets/image/icons/memphis-mobile-app-development-and-application-programming.png'
 import { Titled } from 'react-titled';
 const Landing = () => {
   const { t } = useTranslation();
@@ -72,7 +73,19 @@ const Landing = () => {
               <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
                 <div className="card-top pb-5">
                   <img src={devIcon} alt="" />
-                  <h4>{t('landing.web_mobile_development')}</h4>
+                  <h4>{t('landing.web_development')}</h4>
+                  <p>{t('landing.web_mobile_development_desc')}</p>
+
+                </div>
+               
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
+              <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
+                <div className="card-top pb-5">
+                  <img src={mobileIll} alt="" />
+                  <h4>Mobile Development</h4>
                   <p>{t('landing.web_mobile_development_desc')}</p>
 
                 </div>

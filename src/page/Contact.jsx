@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="layout">
-        <section className="contact-grid row">
+        <section className="contact-grid row justify-content-center">
           <div className="item col-lg-4 col-md-6 col-sm-6 col-12" >
             <div className="grid">
               <span className="icon"><FiPhoneCall /></span>

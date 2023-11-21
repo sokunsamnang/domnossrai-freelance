@@ -112,7 +112,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .theme-gradient {
-  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #2B1C5C 79.69%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -389,7 +389,7 @@ a, a:hover, a:active, a:focus {
 }
 .contact-grid .grid .icon {
   display: block;
-  color: #FD4766;
+  color: #3a267a;
   font-size: 5rem;
   margin-bottom: 3rem;
 }
@@ -397,7 +397,7 @@ a, a:hover, a:active, a:focus {
   stroke-width: 1;
 }
 .contact-grid .grid ul li a:hover {
-  color: #fc5e78;
+  color: #3a267a;
 }
 .contact-grid .grid ul li a {
   line-height: 1.5;
@@ -467,10 +467,10 @@ a, a:hover, a:active, a:focus {
   height: 120px;
 }
 .form-input .form-text input:focus {
-  border-color: #FD4766;
+  border-color: #3a267a;
 }
 .form-input .form-text textarea:focus {
-  border-color: #FD4766;
+  border-color: #3a267a;
 }
 
 .image-banner {
@@ -485,7 +485,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .tag-title {
-  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #2B1C5C 79.69%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -510,11 +510,11 @@ a, a:hover, a:active, a:focus {
   outline: none;
   font-weight: 500;
   margin-top: 30px;
-  background: #FD4766;
+  background: #2B1C5C;
 }
 .submit-button .sb-btn:hover {
-  border-color: #FD4766;
-  color: #FD4766;
+  border-color: #2B1C5C;
+  color: #2B1C5C;
   box-shadow: 0 10px 15px 0 rgba(253, 71, 102, 0.1) !important;
   transform: translateY(-5px);
   background: transparent;
